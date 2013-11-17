@@ -1,0 +1,23 @@
+.bordered {
+    border: 2px solid #999;
+}
+
+.colored {
+    color: #999;
+}
+
+.centered {
+    text-align: center;
+}
+
+.lighted {
+    color: white;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.hided {
+    display:none;
+}
