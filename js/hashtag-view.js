@@ -1,6 +1,6 @@
 $$('document').ready(function(){
 
-    var hashtagText = util_urlParams['hashtagText'];
+    var hashtagText = util_urlParams['q'];
     var data = {};
 
     // get data from server
@@ -54,7 +54,7 @@ $$('document').ready(function(){
     var shareLink = function(score, hashtag) {
 
         var url = 'http://tweetssentiment.com/hashtag.html?'
-                + 'hashtagText='+hashtagText;
+                + 'q='+hashtagText;
 
         var tweetText = '"' + hashtagText + '" have a '
             + Math.round(hashtag.lastScore*100) + '% '

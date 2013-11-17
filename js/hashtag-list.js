@@ -54,7 +54,7 @@ $$('document').ready(function(){
 
         } else {
 
-            window.location.replace('hashtag.html?hashtagText='+hashtagToSearch);
+            window.location.replace('hashtag.html?q='+hashtagToSearch);
         }
     });
 });
