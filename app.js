@@ -25,6 +25,8 @@ var execute = function() {
         fileIn: [
             'lib/quo/quo.js',
             'lib/lungo/lungo.js',
+            'lib/moment/moment.js',
+            'lib/chart/Chart.js',
             'js/util/ajax.js',
             'js/util/config.js',
             'js/util/date.js',
@@ -35,8 +37,7 @@ var execute = function() {
             'js/util/score.js',
             'js/util/search.js',
             'js/util/share-link.js',
-            'lib/moment/moment.js',
-            'lib/chart/Chart.js'
+            'js/util/util.js'
         ],
         fileOut: 'js/tweetssentiment.js',
         tempPath: 'tmp',
