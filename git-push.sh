@@ -30,6 +30,7 @@ if [ "$OPTION" == "y" ]; then
     writeEnvironment > js/util/environment.js && \
     more js/util/environment.js && \
     node app.js && \
+    git add . && \
     git commit -m "$MESSAGE" && \
     git push
 fi
