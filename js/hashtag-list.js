@@ -31,7 +31,7 @@ $$('document').ready(function(){
 
                 $$('#hashtags').append(
                     '<li data-action="search" class="selectable">'+
-                        '<a href="hashtag.html?q='+hashtag.hashtagText+'">'+
+                        '<a href="hashtag.html?q='+encodeURIComponent(hashtag.hashtagText)+'">'+
                             '<img src="'+score.scoreIcon+'" class="on-right" alt="'+
                                 score.scoreText+'"/>'+
                             '<strong style="color:#'+score.scoreColor+'; font-weight: bold;">'+
@@ -54,7 +54,7 @@ $$('document').ready(function(){
 
         } else {
 
-            window.location.replace('hashtag.html?q='+hashtagToSearch);
+            window.location.replace('hashtag.html?q='+encodeURIComponent(hashtagToSearch));
         }
     });
 });

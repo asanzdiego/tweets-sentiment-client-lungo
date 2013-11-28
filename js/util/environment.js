@@ -1,8 +1,8 @@
-/*****************
- *               *
- *  ENVIRONMENT  *
- *               *
- *****************/
+/******************************
+ *                            *
+ *  ENVIRONMENT = PRODUCTION  *
+ *                            *
+ ******************************/
 
 // Server URL
 //var util_server_url = "http://localhost:5000";

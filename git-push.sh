@@ -2,11 +2,11 @@
 
 function writeEnvironment() {
 cat << ENVIRONMENT
-/*****************
- *               *
- *  ENVIRONMENT  *
- *               *
- *****************/
+/*******************************
+ *                             *
+ *  ENVIRONMENT = DEVELOPMENT  *
+ *                             *
+ *******************************/
 
 // Server URL
 var util_server_url = "http://localhost:5000";
@@ -14,10 +14,13 @@ var util_server_url = "http://localhost:5000";
 ENVIRONMENT
 }
 
-echo "***************"
-echo "* DEVELOPMENT *"
-echo "***************"
+echo "**************************************************"
+echo "* PUSH CHANGES TO GITHUB POINTING TO DEVELOPMENT *"
+echo "**************************************************"
 
+writeEnvironment > js/util/environment.js && \
+more js/util/environment.js && \
+node app.js && \
 git add . && \
 git diff | grep +++
 
@@ -27,10 +30,6 @@ if [ "$OPTION" == "y" ]; then
 
     read -p "Write the commit message: " MESSAGE
 
-    writeEnvironment > js/util/environment.js && \
-    more js/util/environment.js && \
-    node app.js && \
-    git add . && \
     git commit -m "$MESSAGE" && \
     git push
 fi
