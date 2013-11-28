@@ -3182,15 +3182,17 @@ var util_stringToDateMini = function(string) {
     return util__stringToDate(string, util_dateFormatMini);
 };
 
-/******************************
- *                            *
- *  ENVIRONMENT = PRODUCTION  *
- *                            *
- ******************************/
+
+/****************************
+ * ENVIRONMENT = PRODUCTION *
+ ****************************/
+
+// version
+var util_version = "jue nov 28 14:07:13 CET 2013"
 
 // Server URL
-//var util_server_url = "http://localhost:5000";
 var util_server_url = "http://tweetssentiment.herokuapp.com";
+
 
 var util_drawGraphic = function(canvasElement, labels, data) {
 
