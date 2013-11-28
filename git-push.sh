@@ -2,15 +2,17 @@
 
 function writeEnvironment() {
 cat << ENVIRONMENT
-/*******************************
- *                             *
- *  ENVIRONMENT = DEVELOPMENT  *
- *                             *
- *******************************/
+
+/*****************************
+ * ENVIRONMENT = DEVELOPMENT *
+ *****************************/
+
+// version
+var util_version = "`date`"
 
 // Server URL
 var util_server_url = "http://localhost:5000";
-//var util_server_url = "http://tweetssentiment.herokuapp.com";
+
 ENVIRONMENT
 }
 
