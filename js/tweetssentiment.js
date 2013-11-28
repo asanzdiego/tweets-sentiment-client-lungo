@@ -3182,11 +3182,11 @@ var util_stringToDateMini = function(string) {
     return util__stringToDate(string, util_dateFormatMini);
 };
 
-/*****************
- *               *
- *  ENVIRONMENT  *
- *               *
- *****************/
+/*******************************
+ *                             *
+ *  ENVIRONMENT = DEVELOPMENT  *
+ *                             *
+ *******************************/
 
 // Server URL
 var util_server_url = "http://localhost:5000";
